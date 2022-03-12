@@ -4,6 +4,8 @@ const route = require('./route');
 require('dotenv').config()
 
 // server.use(express.static(__dirname + '/public'));
+server.use(express.urlencoded({extended: true}));
+server.use(express.json());
 
 server.use(route);
 
