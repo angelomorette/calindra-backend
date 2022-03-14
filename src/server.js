@@ -1,6 +1,7 @@
 const express = require('express');
 const server = express();
-const route = require('./route');
+const bodyParser = require('body-parser');
+const route = require('./routes');
 require('dotenv').config()
 
 // server.use(express.static(__dirname + '/public'));
