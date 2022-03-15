@@ -5,22 +5,44 @@
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
-    <title></title>
+    <title>Desafio Calindra</title>
     <link href="../public/style.css" rel="stylesheet" />
 </head>
 
 <body>
-    <form action="/consulta" method="post">
-        <div class="container">
-            <div id="input-form">
-                <input text="text" name="address" placeholder="Digite um endereço" required><br>
-                <input text="text" name="address" placeholder="Digite um endereço" required><br>
-            </div>
-            <br />
-            <button type="submit">enviar</button>
-            <button type="button" id="add"> + </button>
+    <div class="container">
+        <h1>Desafio Tech Backend 
+            <a href="https://calindra.tech/" target="_blank">Calindra</a>
+        <h1>
+            <p>
+                1) Receba dois ou mais endereços (ex: Av. Rio Branco, 1 Centro, Rio de Janeiro RJ,
+                20090003; Praça Mal. Âncora, 122 Centro, Rio de Janeiro RJ, 20021200; Rua 19 de
+                Fevereiro, 34 Botafogo, Rio de Janeiro RJ, 22280030 ) como parâmetrs de entrada.
+            </p>
+            <p>
+                2) Resolva a geolocalização entre os endereços utilizando a
+                <a href="https://developers.google.com/maps/documentation/geocoding/start" target="_blank">API do Google</a>.
+            </p>
+            <p>
+                3) Após isso, com a latitude e longitude em mãos dos endereços, implementar o algoritmo de
+                cálculo de distância Euclidiana e aplicar em todas as combinações de endereços.
+            </p>
+            <p>
+                4) Retorne as distâncias calculadas entre os todos os endereços e indique os endereços
+                mais próximos e também os endereços mais distantes.
+            </p>
+
+            <form action="/consulta" method="post">
+            
+                <div id="input-form">
+                    <input text="text" name="address" placeholder="Digite um endereço" required><br>
+                    <input text="text" name="address" placeholder="Digite um endereço" required><br>
+                </div>
+                <br>
+                <button type="submit">enviar</button>
+                <button type="button" id="add"> + </button>
+            </form>
         </div>
-    </form>
     <script src="../public/main.js"></script>
 </body>
 
