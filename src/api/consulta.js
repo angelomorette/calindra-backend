@@ -3,8 +3,7 @@ const haversine = require('./haversine');
 
 module.exports = {
     async getDados(req, res) {
-        const address = req.query.add;
-
+        const address = req.body.address;
         //recebendo dados da api do google
         let dadosGoogle = await geocoder.consultaGeocoder(address);
         

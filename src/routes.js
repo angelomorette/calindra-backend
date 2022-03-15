@@ -7,6 +7,6 @@ route.get('/', (req, res) => {
 });
 
 //quando cai na rota ele chama consulta
-route.get('/consulta', consulta.getDados);
+route.post('/consulta', consulta.getDados);
 
 module.exports = route;

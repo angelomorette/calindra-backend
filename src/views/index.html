@@ -6,14 +6,22 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
     <title></title>
-    <!-- <link href="css/seu-stylesheet.css" rel="stylesheet" /> -->
+    <link href="../public/style.css" rel="stylesheet" />
 </head>
 
 <body>
-    
-    Ola
-    
-    <!-- <script src="scripts/seu-script.js"></script> -->
+    <form action="/consulta" method="post">
+        <div class="container">
+            <div id="input-form">
+                <input text="text" name="address" placeholder="Digite um endereço" required><br>
+                <input text="text" name="address" placeholder="Digite um endereço" required><br>
+            </div>
+            <br />
+            <button type="submit">enviar</button>
+            <button type="button" id="add"> + </button>
+        </div>
+    </form>
+    <script src="../public/main.js"></script>
 </body>
 
 </html>

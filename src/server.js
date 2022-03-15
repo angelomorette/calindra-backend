@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const route = require('./routes');
 require('dotenv').config()
 
-// server.use(express.static(__dirname + '/public'));
+server.use('/public', express.static(__dirname + '/public'));
 server.use(bodyParser.urlencoded({extended: true}));
 server.use(bodyParser.json());
 
