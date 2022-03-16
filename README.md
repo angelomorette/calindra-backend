@@ -18,8 +18,8 @@ e retornar as distâncias entre dois ou mais endereços.
   - npm install
   - npm start
 ```
-Para usar a [api do google](https://developers.google.com/maps/documentation/geocoding/start) é necessario possuir uma chave de autenticação, depois crie um arquivo .env e adicione a chave.
-
+Para usar a api do google é necessario possuir uma chave, [infomações sobre a chave](https://developers.google.com/maps/documentation/geocoding/get-api-key).
+Para utilizar a chave no projeto crie um arquivo `.env` e adicione o conteúdo igual ao exemplo.
 ```
   API_KEY=SUA_CHAVE
 ```
