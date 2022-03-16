@@ -6,6 +6,6 @@ route.get('/', (req, res) => {
     res.sendFile(__dirname + '/views/index.html');
 });
 
-route.post('/consulta', consulta.getDados,);
+route.post('/consulta', consulta.getDados);
 
 module.exports = route;

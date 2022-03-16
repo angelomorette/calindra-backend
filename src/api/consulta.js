@@ -8,25 +8,28 @@ module.exports = {
         //recebendo dados da api do google
         let dadosGoogle = await geocoder.consultaGeocoder(address);
 
-        //verificando pesquisa
-        let verificaPesquisa = []
+        //verificando os dados de retorno
+        let verificaDadosGoogle = [];
+
         for (let i = 0; i < address.length; i++) {
             if (dadosGoogle[i].value.raw.status !== 'OK') {
-                verificaPesquisa.push({
-                    "endereço" : address[i],
+
+                verificaDadosGoogle.push({
+                    "endereco": address[i],
                     "tipo de error": dadosGoogle[i].value.raw.status
                 });
             }
         }
-        if (verificaPesquisa.length !== 0) {
-            res.json(verificaPesquisa);
+        if (verificaDadosGoogle.length !== 0) {
+            res.json(verificaDadosGoogle);
 
         } else {
 
             //selecionando logitude e latitude
-            let coordenadas = {}
+            let coordenadas = {};
 
             for (let item in dadosGoogle) {
+
                 coordenadas[item] = {
                     latitude: dadosGoogle[item].value[0].latitude,
                     longitude: dadosGoogle[item].value[0].longitude

@@ -1,7 +1,7 @@
 {
   "name": "api-geolocation",
   "version": "1.0.0",
-  "description": "",
+  "description": "Projeto que usa Geocoding API do google para retornar a distância entre endereços",
   "main": "src/server.js",
   "scripts": {
     "start": "nodemon src/server.js",
